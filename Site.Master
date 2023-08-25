@@ -1,0 +1,52 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="WebApplication2.SiteMaster" %>
+<asp:ContentPlaceHolder>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="Styles/style.css" />
+     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+     <title>COMPANY</title>
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form1" runat="server">
+        <div class="page">
+            <div class="navbar navbar-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">COMPANY</a>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Information</a>
+                    <div class="dropdown-content">
+                        <a href="Details.aspx">Details</a>
+                        <a href="Contact.aspx">Contact</a>
+                        <a href="Address.aspx">Address</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Education</a>
+                    <div class="dropdown-content">
+                        <a href="UG.aspx">UG</a>
+                        <a href="PG.aspx">PG</a>
+                        <a href="#">10&12</a>
+                    </div>
+
+                </div>
+                        <a href="Default.aspx">Home</a>
+                        <a href="About.aspx">About</a> 
+                        <a href="login.aspx">Logout</a> 
+      
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+        <div class="clear"></div>
+        <div class="footer">
+            <footer>
+                <p>SDR ARUN VARSHAN</p>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
+
+</asp:ContentPlaceHolder>
